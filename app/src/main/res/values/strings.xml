@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">SlideShowProject</string>
+    <string name="Bridge">The Brooklyn Bridge, completed in 1883, is one of New York City’s most iconic landmarks, connecting Manhattan and Brooklyn with its majestic stone towers and sweeping cables.</string>
+    <string name="park">Central Park, located in the heart of Manhattan, is a sprawling urban oasis featuring scenic walking paths, lakes, gardens, and iconic landmarks, offering a peaceful escape from the city’s hustle.</string>
+    <string name="grand_central">Grand Central Terminal, opened in 1913, is a historic New York City landmark known for its stunning Beaux-Arts architecture, celestial ceiling, and bustling train concourse.</string>
+</resources>
