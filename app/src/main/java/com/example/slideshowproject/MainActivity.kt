@@ -34,8 +34,10 @@ import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.Font
 import androidx.compose.ui.text.font.FontListFontFamily
+import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
+import androidx.compose.ui.unit.sp
 import com.example.slideshowproject.ui.theme.SlideShowProjectTheme
 import kotlin.compareTo
 import kotlin.dec
@@ -74,11 +76,17 @@ fun SlideShowImages(modifier: Modifier = Modifier) {
         .safeDrawingPadding(),
         horizontalAlignment = Alignment.CenterHorizontally,
         verticalArrangement = Arrangement.Center) {
+        Text(
+            text= "New York's Attractions",
+            fontWeight = FontWeight.Bold,
+            fontSize = 20.sp
+
+        )
         Image(
             painter= painterResource(imageResource),
             contentDescription = null
         )
-
+        ImageDescription(picNumber)
         Spacer(modifier=Modifier.height(16.dp))
         Row(modifier=Modifier,
             horizontalArrangement = Arrangement.Center
@@ -132,7 +140,27 @@ fun SlideShowImages(modifier: Modifier = Modifier) {
     }
 }
 
+@Composable
+fun ImageDescription(picNumber: Int){
 
+var number by remember { mutableStateOf(0) }
+  number= when(picNumber)
+   {  1->R.string.Bridge
+      2->R.string.park
+      3->R.string.hudson
+      4->R.string.central
+      5->R.string.library
+      6->R.string.statue
+      7->R.string.trade
+      else ->R.string.island
+   }
+  Text(
+      text= stringResource(id= number),
+      fontWeight = FontWeight.Bold
+  )
+
+
+}
 @Preview(showBackground = true)
 @Composable
 fun SlideShowPreview() {
