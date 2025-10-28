@@ -100,7 +100,7 @@ fun SlideShowImages(modifier: Modifier = Modifier) {
                     picNumber = 8
                 }
             }) {
-                Text("Previous")
+                Text(stringResource(R.string.previous))
             }
             Spacer(modifier.width(10.dp))
             Button(onClick = {
@@ -110,7 +110,7 @@ fun SlideShowImages(modifier: Modifier = Modifier) {
                     picNumber = 1
                 }
             }) {
-                Text("Next")
+                Text(stringResource(R.string.next))
             }
             }
         Spacer(modifier.width(10.dp))
@@ -134,7 +134,7 @@ fun SlideShowImages(modifier: Modifier = Modifier) {
 
 
         }) {
-            Text("Go")
+            Text(stringResource(R.string.go))
         }
 
     }

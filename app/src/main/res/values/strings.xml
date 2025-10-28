@@ -8,5 +8,8 @@
     <string name="statue">Statue Of Liberty</string>
     <string name="trade">World Trade Center</string>
     <string name="island">Little Island</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+    <string name="go">Go</string>
 
 </resources>
